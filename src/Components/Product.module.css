@@ -1,0 +1,74 @@
+.product {
+  position: relative;
+  margin-top: 100px;
+  margin-right: 40px;
+  width: 286px;
+  height: 378px;
+  text-align: center;
+  background: #ffefce;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-bottom: 60px; */
+  gap: 15px;
+}
+
+.product h3 {
+  color: #292620;
+}
+
+.product p {
+  color: #6e6658;
+  width: 186px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product > div:not(:first-child) {
+  width: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product button {
+  position: relative;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background: transparent;
+  border: none;
+  line-height: 1.3;
+}
+
+.product button:hover {
+  cursor: pointer;
+}
+
+.product button:after {
+  content: "";
+  width: 90px;
+  height: 50px;
+  background: url("../assets/Polygon.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.product button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 300;
+}
+
+.product > div:first-child {
+  width: 167px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-20%) translateY(-60%);
+}
