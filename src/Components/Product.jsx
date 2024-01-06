@@ -8,9 +8,9 @@ const Product = ({ imageUrl, title, description, weight, price }) => {
 
   return (
     <div className={classes.product}>
-      <div className="image">
+      {/* <div className="image">
         <img src={imageUrl} alt="" />
-      </div>
+      </div> */}
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="weight">
